@@ -5,5 +5,10 @@ def find_min_odd(data):
         data: list of numbers
     returns: minimum odd number in the list
     """
-    return 0
+    
+    odd=[num for num in data if num%2==1]
 
+    return min(odd)
+
+num=[5,7,9,8]
+print(find_min_odd(num))
